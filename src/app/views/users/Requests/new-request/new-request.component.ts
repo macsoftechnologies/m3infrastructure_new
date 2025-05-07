@@ -2534,8 +2534,13 @@ export class NewRequestComponent implements OnInit {
 
   SaveasDraft(statusdata) {
     // console.log("contractor")
-    this.Requestdata.Request_status = "Draft";
+    if(this.RequestForm.get('SubContractor').valid) {
+      this.Requestdata.Request_status = "Draft";
     this.CreateRequest();
+    } else {
+      this.openSnackBar("please select contractor ");
+    }
+    
     //this.requestsserivies.CreateNewRequest()
   }
 
