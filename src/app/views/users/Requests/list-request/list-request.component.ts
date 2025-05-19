@@ -1228,14 +1228,14 @@ export class ListRequestComponent implements OnInit {
         this.selectedRequestIds.push(x['id']);
       }
     });
-
+    
     if (event != 'none') {
       let title = event;
       let dialogRef: MatDialogRef<any> = this.dialog.open(
         EditRequestComponent,
         {
           width: '800px',
-          height: '200px',
+          height: 'fit-content',
           disableClose: false,
           data: { title: title, payload: this.selectedRequestIds.toString() },
         }
