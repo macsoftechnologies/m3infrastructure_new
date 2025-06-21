@@ -1928,6 +1928,13 @@ export class NewRequestComponent implements OnInit {
 
       ];
     }
+    else if (event == '22') {
+
+      this.floors = [
+        'APM Terminal'
+
+      ];
+    }
     this.planType = null;
     this.pdfSrc = null;
     this.spinner = true;
@@ -2027,8 +2034,6 @@ export class NewRequestComponent implements OnInit {
           this.pdfSrc = "assets/images/plans/P-hus/P-hus.pdf";
           this.blocks = [
             { name: "P-hus Zones", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-1', planType: 'P-hus Site-Plan' },
-
-
           ]
           break;
         default:
@@ -2042,17 +2047,15 @@ export class NewRequestComponent implements OnInit {
           this.planType = "Rendsborg Park";
           this.pdfSrc = "assets/images/plans/RendsborgPark/RendsborgPark.pdf";
           this.blocks = [
-            { name: "M3 North 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
-            { name: "M3 South 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
-            { name: "M3 North 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
+            { name: "M3 North area 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
+            { name: "M3 South area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
+            { name: "M3 North area 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
+            { name: "Tscherning area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-Tscherning-area', planType: 'Rendsborg Park' },
             { name: "Office & Welfare cabin area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'Office-area', planType: 'Rendsborg Park' },
             { name: "Rendsborg Parking 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-1', planType: 'Rendsborg Park' },
             { name: "Rendsborg Parking 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-2', planType: 'Rendsborg Park' },
             { name: "Rendsborg Parking 3", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-3', planType: 'Rendsborg Park' },
-
             { name: "Rendsborg Tent", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgTent.pdf", className: 'RendsborgPark-tent', planType: 'Rendsborg Park' },
-
-
           ]
           break;
         default:
@@ -2083,8 +2086,19 @@ export class NewRequestComponent implements OnInit {
           this.pdfSrc = "assets/images/plans/EHLakeWest/EHLakeWest.pdf";
           this.blocks = [
             { name: "EHLakeWest Zones", pdfSrc: "assets/images/plans/EHLakeWest/EHLakeWest.pdf", className: 'EHLakeWest-1', planType: 'EH Lake West' },
-
-
+          ]
+          break;
+        default:
+          break;
+      }
+    }
+    else if (this.selectedbuilding == '22') {
+      switch (event) {
+        case "APM Terminal":
+          this.planType = "APM Terminal";
+          this.pdfSrc = "assets/images/plans/APM-Terminal/APM-Terminal.pdf";
+          this.blocks = [
+            { name: "APM Terminal Zones", pdfSrc: "assets/images/plans/APM-Terminal/APM-Terminal.pdf", className: 'APM-Terminal-1', planType: 'APM Terminal' },
           ]
           break;
         default:

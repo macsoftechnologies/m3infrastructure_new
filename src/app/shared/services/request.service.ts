@@ -194,31 +194,73 @@ export class RequestService {
         planType: "Rendsborg Park",
         zoneList: [
           {
-            floorName: 'M3 North 2',
+            floorName: 'M3 North area 2',
             zoneSubList: [
               {
-                value: 'M3 North 2',
-                className: "M3-North-2",
+                value: 'M3 North area',
+                className: "M3-North-area-2-1",
+                isSelected: false
+              },{
+                value: 'Tent 10',
+                className: "M3-North-area-2-2",
+                isSelected: false
+              },
+              {
+                value: 'Tent 15',
+                className: "M3-North-area-2-3",
+                isSelected: false
+              },
+              {
+                value: 'Tent 14',
+                className: "M3-North-area-2-4",
+                isSelected: false
+              },
+              {
+                value: 'Tent 11',
+                className: "M3-North-area-2-5",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: 'M3 South area',
+            zoneSubList: [
+              {
+                value: 'M3 South area',
+                className: "M3-South-area-1",
+                isSelected: false
+              },{
+                value: 'Tent 13',
+                className: "M3-South-area-2",
                 isSelected: false
               },
             ]
           },
           {
-            floorName: 'M3 South 1',
+            floorName: 'M3 North area 1',
             zoneSubList: [
               {
-                value: 'M3 South 1',
-                className: "M3-South-2",
+                value: 'M3 North area',
+                className: "M3-North-area-1-1",
                 isSelected: false
-              },
+              },{
+                value: 'Tent 9',
+                className: "M3-North-area-1-2",
+                isSelected: false
+              },{
+                value: 'Tent 12',
+                className: "M3-North-area-1-3",
+                isSelected: false
+              }
+
             ]
           },
-          {
-            floorName: 'M3 North 1',
+           {
+            floorName: 'Tscherning area',
             zoneSubList: [
-              {
-                value: 'M3 North 1',
-                className: "M3-North-1",
+               {
+                value: 'Tscherning area',
+                className: "RendsborgPark-Tscherning-area",
                 isSelected: false
               },
 
@@ -358,6 +400,27 @@ export class RequestService {
                 className: "Zone-3-EHLakeWest",
                 isSelected: false
               },
+            ]
+          },
+          
+        ]
+      },
+      {
+        planType: "APM Terminal",
+        zoneList: [
+          {
+            floorName: 'APM Terminal Zones',
+            zoneSubList: [
+            {
+              value: 'M3 North',
+              className: "APM-Terminal-1",
+              isSelected: false
+            },
+            {
+              value: 'M3 South',
+              className: "APM-Terminal-2",
+              isSelected: false
+            },  
             ]
           },
           

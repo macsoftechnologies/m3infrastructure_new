@@ -184,6 +184,7 @@ export class PlansComponent implements OnInit {
     "NN East Site-Plan",
     "P-hus Site-Plan",
     "Rendsborg Park",
+    "APM Terminal",
   ];
 
 

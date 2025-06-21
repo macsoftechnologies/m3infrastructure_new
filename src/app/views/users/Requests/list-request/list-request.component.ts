@@ -183,6 +183,7 @@ export class ListRequestComponent implements OnInit {
     "NN East Site-Plan",
     "P-hus Site-Plan",
     "Rendsborg Park",
+    "APM Terminal",
   ];
 
   getHras = [

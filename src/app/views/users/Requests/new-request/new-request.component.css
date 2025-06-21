@@ -4197,9 +4197,18 @@ input {
 .RendsborgPark-North-1{
   position: absolute;
   bottom: 29%;
-  left: 43%;
-  width: 5%;
+  left: 42%;
+  width: 5.7%;
   height: 16%;
+  padding: 0;
+  z-index: 9999999;
+}
+.RendsborgPark-Tscherning-area{
+  position: absolute;
+  bottom: 34%;
+  left: 48%;
+  min-width: 21px;
+  height: 9%;
   padding: 0;
   z-index: 9999999;
 }
@@ -4276,7 +4285,15 @@ input {
   padding: 0;
   z-index: 9999999;
 }
-
+.APM-Terminal-1{
+  position: absolute;
+  top: 5%;
+  left: 17%;
+  width: 69%;
+  height: 93%;
+  padding: 0;
+  z-index: 9999999;
+}
 /* end eh lake  */
 
 /* / Start Responsive RendsborgPark M3 North-1 in background css  / */
