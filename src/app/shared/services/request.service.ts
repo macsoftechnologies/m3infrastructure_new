@@ -194,10 +194,10 @@ export class RequestService {
         planType: "Rendsborg Park",
         zoneList: [
           {
-            floorName: 'M3 North area 2',
+            floorName: 'M3 North 2',
             zoneSubList: [
               {
-                value: 'M3 North area',
+                value: 'M3 North 2',
                 className: "M3-North-area-2-1",
                 isSelected: false
               },{
@@ -223,10 +223,10 @@ export class RequestService {
             ]
           },
           {
-            floorName: 'M3 South area',
+            floorName: 'M3 South 1',
             zoneSubList: [
               {
-                value: 'M3 South area',
+                value: 'M3 South 1',
                 className: "M3-South-area-1",
                 isSelected: false
               },{
@@ -237,10 +237,10 @@ export class RequestService {
             ]
           },
           {
-            floorName: 'M3 North area 1',
+            floorName: 'M3 North 1',
             zoneSubList: [
               {
-                value: 'M3 North area',
+                value: 'M3 North 1',
                 className: "M3-North-area-1-1",
                 isSelected: false
               },{

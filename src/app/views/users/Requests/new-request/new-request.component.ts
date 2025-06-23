@@ -2047,9 +2047,9 @@ export class NewRequestComponent implements OnInit {
           this.planType = "Rendsborg Park";
           this.pdfSrc = "assets/images/plans/RendsborgPark/RendsborgPark.pdf";
           this.blocks = [
-            { name: "M3 North area 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
-            { name: "M3 South area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
-            { name: "M3 North area 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
+            { name: "M3 North 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
+            { name: "M3 South 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
+            { name: "M3 North 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
             { name: "Tscherning area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-Tscherning-area', planType: 'Rendsborg Park' },
             { name: "Office & Welfare cabin area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'Office-area', planType: 'Rendsborg Park' },
             { name: "Rendsborg Parking 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-1', planType: 'Rendsborg Park' },
@@ -2568,12 +2568,14 @@ export class NewRequestComponent implements OnInit {
   }
 
   SaveasDraft(statusdata) {
+        (Object as any).keys(this.RequestForm.controls).forEach((control) => {
+      this.RequestForm.get(`${control}`).updateValueAndValidity();
+      this.RequestForm.get(`${control}`).markAsTouched();
+    });
     // console.log("contractor")
     if(this.RequestForm.get('SubContractor').valid) {
       this.Requestdata.Request_status = "Draft";
     this.CreateRequest();
-    } else {
-      this.openSnackBar("please select contractor ");
     }
     
     //this.requestsserivies.CreateNewRequest()
@@ -4700,7 +4702,7 @@ this.RequestForm.controls["Safetyprecaustion"].setValue(precautionIds);
   // }
 
   images: { name: string }[] = [];
-  imagesAdd: { name: string }[] = [];;
+  imagesAdd: { name: string }[] = [];
 
 csvInputChange(e: any): void {
   const files = e.target.files;
